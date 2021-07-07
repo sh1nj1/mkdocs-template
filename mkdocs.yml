@@ -1,0 +1,49 @@
+site_name: Docs
+site_url: https://example.com/
+nav:
+  - Home: index.md
+  - Development:
+      - Mkdocs:
+          - Installation: development/mkdocs/install.md
+theme:
+  name: material
+  language: kr
+  palette:
+    - scheme: chk0nmkdocs
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - scheme: slate
+      primary: black
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  custom_dir: overrides
+  features:
+    #- navigation.instant
+    #- navigation.tabs
+    - navigation.top
+    - navigation.indexes
+extra_css:
+  - stylesheets/extra.css
+copyright: Copyright &copy; 2021 Chk0ndanger
+plugins:
+  - search
+  - macros
+markdown_extensions:
+  - toc:
+      toc_depth: 6
+      permalink: "#"
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - plantuml_markdown:
+      server: http://www.plantuml.com/plantuml
+
