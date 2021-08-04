@@ -1,5 +1,5 @@
 site_name: Docs
-site_url: https://example.com/
+site_url: https://soonoh.gitlab.io
 nav:
   - Home: index.md
   - Development:
