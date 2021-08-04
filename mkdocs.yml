@@ -1,5 +1,5 @@
 site_name: Docs
-site_url: https://soonoh.gitlab.io
+site_url: https://soonoh.gitlab.io/mkdocs-template
 nav:
   - Home: index.md
   - Development:
