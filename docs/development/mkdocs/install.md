@@ -14,3 +14,6 @@ pip 는 version 3 이다.
 
 `mkdocs serve -a 0.0.0.0:8000`
 
+## 설정
+
+* mkdocs.yml 에 Google Analytics ID 설정 필요
