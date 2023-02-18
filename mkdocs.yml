@@ -7,7 +7,7 @@ nav:
           - Installation: development/mkdocs/install.md
 theme:
   name: material
-  language: kr
+  language: ko
   palette:
     - scheme: chk0nmkdocs
       primary: teal
