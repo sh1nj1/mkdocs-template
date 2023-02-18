@@ -4,7 +4,9 @@ nav:
   - Home: index.md
   - Development:
       - Mkdocs:
-          - Installation: development/mkdocs/install.md
+        - Installation: development/mkdocs/install.md
+        - "Test data tables": development/mkdocs/test-data.md
+        - "Table from Google Sheet": development/mkdocs/table-from-google-sheet.md
 theme:
   name: material
   language: ko
@@ -27,6 +29,9 @@ theme:
     #- navigation.tabs
     - navigation.top
     - navigation.indexes
+extra_javascript:
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - javascripts/tablesort.js
 extra_css:
   - stylesheets/extra.css
 copyright: Copyright &copy; 2021 Chk0ndanger
@@ -50,3 +55,6 @@ extra:
   analytics:
     provider: google
     property: G-XXXXXXXXXX # XXX: update this to your analytics measurement ID
+  macros:
+    google_sheet:
+      api_key_json_path: "" # add path if it is not in ~/.config/gspread/service_account.json
