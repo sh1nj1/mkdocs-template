@@ -1,7 +1,7 @@
 import os
-import yaml
 from mkdocs.plugins import BasePlugin
 from mkdocs.config import config_options
+
 
 class GenNavPlugin(BasePlugin):
     config_scheme = (
@@ -15,7 +15,6 @@ class GenNavPlugin(BasePlugin):
             return
         docs_dir = config['docs_dir']
         nav_items = self.create_nav_dict(docs_dir, docs_dir, self.config['nav_include'])
-        nav_string = yaml.dump({'nav': nav_items})
         config['nav'] = nav_items
         return config
 
@@ -36,6 +35,7 @@ class GenNavPlugin(BasePlugin):
                     nav_dict.append({self.format_title(item): item_dict})
         return nav_dict
 
-    def format_title(self, title):
+    @staticmethod
+    def format_title(title):
         formatted = " ".join([word.capitalize() for word in title.replace("-", " ").replace("_", " ").split()])
         return f'{formatted}'
