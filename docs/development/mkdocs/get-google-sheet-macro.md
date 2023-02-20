@@ -1,4 +1,4 @@
-# Table from google sheet
+# Get Google Sheet Macro
 
 [Mkdocs-Macros-Plugin](https://mkdocs-macros-plugin.readthedocs.io/en/latest/) 을 이용해서 Google Spread Sheet 를 [Mkdocs Data Table](https://squidfunk.github.io/mkdocs-material/reference/data-tables/) 을 생성한다.
 

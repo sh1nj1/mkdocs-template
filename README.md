@@ -1,3 +1,3 @@
 # Docs site
 
-* [Install](docs/development/mkdocs/install.md)
+* [Install](docs/development/mkdocs/00_install.md)
