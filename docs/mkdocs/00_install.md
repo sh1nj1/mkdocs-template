@@ -10,19 +10,23 @@ pip 는 version 3 이다.
 
 `pip install -r requirements.txt`
 
-* custom mkdocs-gen-nav-plugin 설치
-  - [Mkdocs Gen Nav Plugin - install](plugins/mkdocs_gen_nav_plugin/README.md#install) 에 따라 빌드및 설치
 * `get_google_sheet` 매크로 사용을 위한 인증키 파일 처리
   - 해당 매크로 사용하지 않을 경우 불필요및 사용되는 md 파일에서 제거 필요
   - [Get Google Sheet - Google Service API Key](get-google-sheet-macro.md#google-service-api-key) 에 따라 인증키 파일을 다운로드 받아 `~/.config/gspread/service_account.json` 에 복사한다.
 
-구동 
+구동
 
 `mkdocs serve -a 0.0.0.0:8000`
 
 ## 설정
 
 * mkdocs.yml 에 Google Analytics ID 설정 필요
+
+## 문서 작성
+
+* [Mkdocs Gen Nav Plugin](https://github.com/vrerv/mkdocs-gen-nav-plugin) 에 의해 markdown 파일을 mkdocs.yml 의 nav 에 맵핑을 작성할 필요 없이 docs 안에 파일을 두면 디렉토리 구조에 따라 자동 맵핑된다.
+* [Material For Mkdocs - Reference](https://squidfunk.github.io/mkdocs-material/reference/) 를 참조해서 추가적인 마크다운을 사용할 수 있다.
+* [Mkdocs Macros Plugin](https://mkdocs-macros-plugin.readthedocs.io/en/latest/) 을 통해 추가적인 마크다운 확장을 쉽게 할 수 있다. 
 
 ## Upgrade
 
