@@ -49,6 +49,7 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.snippets
+  - pymdownx.tasklist
   - plantuml_markdown:
       server: http://www.plantuml.com/plantuml
 extra:
